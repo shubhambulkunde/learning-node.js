@@ -1,3 +1,7 @@
-const intro = require('./intro').default
-const names = require('./utils')
-intro(names.shubham)
+const os = require('os')
+
+const user = os.userInfo()
+console.log(user);
+
+console.log(`The system uptime is ${os.uptime()} seconds`);
+
